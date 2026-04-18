@@ -21,8 +21,14 @@ Marker goes beyond plain text! When you convert a complex, image-heavy document 
 Another incredible feature is its specialized mathematical handling. Marker is capable of detecting and accurately translating complex mathematical expressions and formulas from your PDFs straight into clean, beautifully formatted **LaTeX math symbols** within the resulting `.md` file. This makes it a perfect tool for converting academic and scientific papers!
 
 *Preview of the extracted result:*
-![Original pdf](display/test-pdf/test.pdf)
-![Converted md file](display/result/test.md)
+![Original pdf](display/test-pdf/test.png)
+
+The result:
+```markdown
+Show that any triangle has two sides whose lengths a and b satisfy
+
+$$\frac{\sqrt{5}-1}{2}<\frac{a}{b}<\frac{\sqrt{5}+1}{2}$$
+```
 
 ## Hardware Requirements
 - **GPU:** NVIDIA RTX 5070 or higher (also compatible with RTX 20/30/40 series).
