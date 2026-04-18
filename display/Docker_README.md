@@ -18,10 +18,10 @@ Marker goes beyond plain text! When you convert a complex, image-heavy document 
 ### Mathematical Formula to LaTeX Support
 Another incredible feature is its specialized mathematical handling. Marker is capable of detecting and accurately translating complex mathematical expressions and formulas from your PDFs straight into clean, beautifully formatted **LaTeX math symbols** within the resulting `.md` file. This makes it a perfect tool for converting academic and scientific papers!
 
-*Preview of the extracted result:*
+*Original pdf:*
 ![Original pdf](https://raw.githubusercontent.com/Phototropic-bird/marker-rtx50/main/display/test-pdf/test.png)
 
-The result:
+*The result:*
 ```markdown
 Show that any triangle has two sides whose lengths a and b satisfy
 
