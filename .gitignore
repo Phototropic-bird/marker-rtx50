@@ -1,0 +1,10 @@
+# Ignore test result data (if any)
+# result/
+
+# IDE configurations
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
