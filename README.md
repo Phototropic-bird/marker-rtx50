@@ -11,6 +11,19 @@ Marker is a powerful **local first AI** PDF conversion tool (to .md file specifi
 - It is entirely **Offline available**, ensuring complete privacy for your sensitive documents.
 - The conversion **Performance only depends on User's computer efficacy**. The better your GPU, the faster it runs!
 
+### Powerful Image Extraction
+Marker goes beyond plain text! When you convert a complex, image-heavy document (for example, taking a look at the results of `large-pdf-conatining-pics-result.pdf`), Marker intelligently **isolates and extracts the images** from the original PDF. It saves the images as independent files in your output folder and automatically **generates the correct image links directly inside the `.md` file**.
+
+*Preview of the extracted result:*
+![Conversion Result Preview](display/result/large-pdf-containing-pics-result.png)
+
+### Mathematical Formula to LaTeX Support
+Another incredible feature is its specialized mathematical handling. Marker is capable of detecting and accurately translating complex mathematical expressions and formulas from your PDFs straight into clean, beautifully formatted **LaTeX math symbols** within the resulting `.md` file. This makes it a perfect tool for converting academic and scientific papers!
+
+*Preview of the extracted result:*
+![Original pdf](display/test-pdf/test.pdf)
+![Converted md file](display/result/test.md)
+
 ## Hardware Requirements
 - **GPU:** NVIDIA RTX 5070 or higher (also compatible with RTX 20/30/40 series).
 - **Driver:** Latest NVIDIA Drivers (Version supporting CUDA 12.8+ recommended).
@@ -42,7 +55,7 @@ Next, set up the folders for your inputs, outputs, and the model cache.
 mkdir input output marker-cache
 ```
 
-- **`input/`**: Place the PDF you wish to convert (e.g., `test.pdf`) inside this folder.
+- **`input/`**: Place the PDF you wish to convert (e.g., `test.pdf`) inside this folder. If you don't have one handy, you can download our [sample test.pdf](https://github.com/Phototropic-bird/marker-rtx50/raw/main/display/test-pdf/test.pdf) to test it out.
 - **`output/`**: Your converted Markdown and extracted images will appear here.
 - **`marker-cache/`**: This folder will store the AI model weights. **Crucial:** Mounting this prevents Docker from re-downloading ~10GB of models on every run.
 
