@@ -70,6 +70,14 @@ docker run --rm -it --gpus all `
 If your GPU is not compatible or you do not have an NVIDIA GPU, you can still use this image by simply removing the `--gpus all` flag from the command above. 
 > **Note:** Running the AI models on a CPU will work, but the conversion process will be significantly slower.
 
+```powershell
+docker run --rm -it `
+  -v "${PWD}:/data" `
+  -v "${PWD}\marker-cache:/root/.cache" `
+  phototropicbird/marker-rtx50:latest `
+  marker_single /data/input/test.pdf /data/output --device cpu
+```
+
 # Legal Disclaimer
 1. Nature of the Work
     - This Docker image (phototropicbird/marker-rtx50) is an unofficial, community-maintained distribution of the "Marker" project. It has been specifically modified to support NVIDIA Blackwell architecture (RTX 50-series GPUs) and utilize PyTorch Nightly builds.

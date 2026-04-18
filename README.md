@@ -84,6 +84,14 @@ docker run --rm -it --gpus all `
 If your GPU is not compatible or you do not have an NVIDIA GPU, you can still use this image by simply removing the `--gpus all` flag from the command above. 
 > **Note:** Running the AI models on a CPU will work, but the conversion process will be significantly slower.
 
+```powershell
+docker run --rm -it `
+  -v "${PWD}:/data" `
+  -v "${PWD}\marker-cache:/root/.cache" `
+  marker-rtx50:local `
+  marker_single /data/input/test.pdf /data/output --device cpu
+```
+
 ---
 
 ## Legal Disclaimer
